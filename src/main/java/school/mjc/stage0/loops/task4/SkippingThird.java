@@ -3,7 +3,7 @@ package school.mjc.stage0.loops.task4;
 public class SkippingThird {
     public void printUntilButThird(int lastPrinted) {
         
-	    for(int counter = 1; counter < lastPrinted; counter++){
+	    for(int counter = 1; counter <= lastPrinted; counter++){
 	        if(counter % 3 == 0){
 	            continue;
 	        }
