@@ -6,7 +6,7 @@ public class NumberToBreakOn {
 	   int x = 1;
 	   if (numberToGoUntil < toBreakWith){
 	       System.out.println("iterating till the end");
-	       while(x < numberToGoUntil){
+	       while(x <= numberToGoUntil){
 	           	 System.out.println(x);
 	           	 x++;
 	           	 
