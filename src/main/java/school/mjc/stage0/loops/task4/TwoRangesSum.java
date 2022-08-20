@@ -7,7 +7,7 @@ public class TwoRangesSum {
         int skippedSum = 0;
 	    int countedSum = 0;
 	   
-	    if (lastInRow > numberToSkip){
+	    if (lastInRow - numberToSkip > 1){
 	        for(int i = 0; i <= numberToSkip; i++){
 	            skippedSum += i;
 	            
@@ -19,6 +19,14 @@ public class TwoRangesSum {
 	        }
 	    System.out.println(skippedSum);
 	    System.out.println(countedSum);
+	        
+	    }
+	    else if(lastInRow - numberToSkip == 1){
+	          for(int i = 0; i <= numberToSkip; i++){
+	           skippedSum += i;
+	           
+	    }   System.out.println(skippedSum);
+	    System.out.println(0);
 	        
 	    }
 	    else if(numberToSkip > lastInRow){
@@ -34,6 +42,9 @@ public class TwoRangesSum {
 	        
 	    }
 	        
+	        
+	    
+	
 	        
 	    
 
