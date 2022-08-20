@@ -3,9 +3,13 @@ package school.mjc.stage0.loops.task4;
 public class TwoRangesSum {
     public void printSumOfTwoRanges(int numberToSkip, int lastInRow) {
         
-	
-        int skippedSum = 0;
+	       int skippedSum = 0;
 	    int countedSum = 0;
+	    if (lastInRow < 0){
+	         System.out.println("last number in row is negative");
+	    }
+	        
+	    }
 	   
 	    if (lastInRow - numberToSkip > 1){
 	        for(int i = 0; i <= numberToSkip; i++){
@@ -14,11 +18,11 @@ public class TwoRangesSum {
 	        }
 	        for(int i = numberToSkip + 1; i <= lastInRow; i++){
 	            countedSum += i;
-	            numberToSkip++;
+	            
 	            
 	        }
-	    System.out.println(skippedSum);
-	    System.out.println(countedSum);
+	    System.out.println("skipped sum is " + skippedSum);
+	    System.out.println("counted sum is " + countedSum);
 	        
 	    }
 	    else if(lastInRow - numberToSkip == 1){
@@ -46,7 +50,6 @@ public class TwoRangesSum {
 	    
 	
 	        
-	    
 
 
     }
